@@ -1,11 +1,11 @@
-FROM nvidia/cuda:12.6.3-cudnn-devel-ubuntu24.04
+FROM nvidia/cuda:12.8.1-cudnn-devel-ubuntu24.04
 
 ENV CHECK_UPDATE="false"
 ENV HOST="0.0.0.0"
 #ENV CONFIG_PATH="/home/app/model"
 #ENV LM_MODEL_PATH="/home/app/llm"
 ENV DOWNLOAD_SOURCE="modelscope"
-ENV INIT_LLM="false"
+ENV INIT_LLM="true"
 
 WORKDIR /home/app
 
